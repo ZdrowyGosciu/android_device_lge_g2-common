@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
     init.g2.rc \
     init.g2.usb.rc \
     init.g2.baseband.sh \
+    init.qcom.sh \
     ueventd.g2.rc \
     fstab.g2
 
