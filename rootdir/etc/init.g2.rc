@@ -649,11 +649,6 @@ service qseecomd /system/bin/qseecomd
     user root
     group root
 
-service g2-baseband-sh /system/bin/sh /init.g2.baseband.sh
-	class late_start
-	user root
-	oneshot
-
 # loc_launcher will start as root and set its uid to gps
 service loc_launcher /system/bin/loc_launcher
     class late_start
