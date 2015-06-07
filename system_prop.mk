@@ -65,10 +65,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.sensors.gestures=true \
     ro.qualcomm.sensors.pedometer=true \
     ro.qualcomm.sensors.pam=true \
-    ro.qualcomm.sensors.scrn_ortn=true \
-    debug.qualcomm.sns.hal=i \
-    debug.qualcomm.sns.daemon=i \
-    debug.qualcomm.sns.libsensor1=e
+    ro.qualcomm.sensors.scrn_ortn=true
+
+# Sensors logs
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.qualcomm.sns.hal=e \
+    debug.qualcomm.sns.daemon=e \
+    debug.qualcomm.sns.libsensor1=e \
+    persist.debug.sensors.hal=e \
+    persist.debug.ar.hal=e
 
 # MTP and USB-OTG
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
